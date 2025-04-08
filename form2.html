@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu cadastro</title>
+    <style>
+        .form-box {
+            border: 1px solid #fde1e1;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f0dccf;
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .form-box label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-box input[type="text"],
+        .form-box input[type="email"],
+        .form-box input[type="tel"],
+        .form-box input[type="number"],
+        .form-box input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            background-color: #ffffff;
+        }
+        .form-box input[type="submit"] {
+            background-color: #9bd38a;
+            border-radius: 10px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .form-box input[type="submit"]:hover {
+            background-color: #84b879;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <form action="#" method="get">
+            <h1>Faça seu cadastro!!!</h1>
+            
+            <!-- Nome-->
+            <label>Nome:
+                <input type="text" name="name" id="name"
+                placeholder="Digite seu nome" maxlength="30" required autofocus>
+            </label>
+            <!--E-mail, label vinculada com o input(for e id)-->
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email"
+            placeholder="email@email.com.br" maxlength="50" required autocomplete>
+            <!--autocomplete salva o q vc digitou no primeiro envio e completa no proximo-->
+
+            <!--Telefone-->
+            <label>Telefone:
+                <input type="tel" name="tel" id="tel"
+                placeholder="(00) 00000-0000" required autocomplete="off">
+            </label>
+
+            <!-- endereço-->
+            <label>Endereço:
+                <input type="text" name="endereço" id="endereço"
+                placeholder="Digite seu endereço" maxlength="30" required autofocus>
+            </label>
+
+            <label for="number">Numero:</label>
+            <input type="number" id="number"
+            placeholder="Digite o numero da sua casa" maxlength="5" required autofocus>
+
+            <!-- senha -->
+            <label for="password">Senha:</label>
+            <input type="password" id="password" placeholder="Digite sua senha" required>
+            <!-- confirmar senha -->
+            <label for="password"> Confirmar senha:</label>
+            <input type="password" id="password" placeholder="Confirme a sua senha" required>
+
+            <!--submit-->
+            <input type="submit" id="subimit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
